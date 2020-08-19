@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Parma
 
 struct ArticleDetailView: View {
     var article: Article
@@ -22,7 +23,9 @@ struct ArticleDetailView: View {
                     .overlay(ArticleAuthorModalImageOverlay(author: article.author), alignment: .topLeading)
                 
                 
-                Text(article.copy)
+                let formattedCopy = article.copy.replacingOccurrences(of: "<br/>", with: "\n")
+                
+                Parma(formattedCopy, render: ArticleRenderer())
                     .padding()
             }
         }

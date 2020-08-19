@@ -8,14 +8,14 @@
 
 import SwiftUI
 import FirebaseStorage
-import SDWebImageSwiftUI
+import struct Kingfisher.KFImage
 
 struct FirebaseImage: View {
     @State private var imageURL = URL(string: "")
     var imagePath: String
     
     var body: some View {
-        WebImage(url: imageURL)
+        KFImage(imageURL)
             .resizable()
             .onAppear { loadImageFromFirebase(imagePath: imagePath) }
     }
