@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "userName": "BigBroski",
+    "firstName": "Bronson",
+    "lastName": "Lane",
+    "userWeight": 100.1,
+    "bodyMassIndex": 18.5,
+    "bodyFatPercent": 91.2,
+    "numberOfWorkoutsCompleted": 537,
+    "profilePictureName": "big_broski",
+    "backgroundImageName": "broski-hero",
+    "savedWorkoutPlanIDs": [ 0, 1 ],
+    "signUpDateTime": "2020-03-13T14:29:52Z"
+}

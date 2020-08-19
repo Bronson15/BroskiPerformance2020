@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>131444730174-gtb987ldhd8l6qi9nqd5k904dkjfmmfl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.131444730174-gtb987ldhd8l6qi9nqd5k904dkjfmmfl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA2sKKTYrRzU4HCYSpe_6ufFUNAqkhaUfY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>131444730174</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.iOSLife.BroskiPerform</string>
+	<key>PROJECT_ID</key>
+	<string>broski-performance</string>
+	<key>STORAGE_BUCKET</key>
+	<string>broski-performance.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:131444730174:ios:4c04431d40c08cf96ae46f</string>
+	<key>DATABASE_URL</key>
+	<string>https://broski-performance.firebaseio.com</string>
+</dict>
+</plist>
