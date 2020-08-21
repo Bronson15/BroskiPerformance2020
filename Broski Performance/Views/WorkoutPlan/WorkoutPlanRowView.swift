@@ -8,7 +8,6 @@
 
 import SwiftUI
 import FirebaseStorage
-import SDWebImageSwiftUI
 
 struct WorkoutPlanRowView: View {
     @State private var imageURL = URL(string: "")

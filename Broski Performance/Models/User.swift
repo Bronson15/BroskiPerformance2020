@@ -17,20 +17,13 @@ struct User: Hashable, Codable, Identifiable {
     var bodyMassIndex: Double
     var bodyFatPercent: Double
     var numberOfWorkoutsCompleted: Int
-    fileprivate var profilePictureName: String
-    fileprivate var backgroundImageName: String
+    var profilePicturePath: String
+    var backgroundImagePath: String
     var savedWorkoutPlanIDs: [Int]
     fileprivate var signUpDateTime: String
 }
 
 extension User {
-    var profilePicture: Image {
-        ImageStore.shared.image(name: profilePictureName)
-    }
-    
-    var backgroundImage: Image {
-        ImageStore.shared.image(name: backgroundImageName)
-    }
     
     var signUpDate: String {
         let dateTimeFormatter = ISO8601DateFormatter()

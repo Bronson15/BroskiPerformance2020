@@ -32,7 +32,7 @@ struct ArticleRenderer: ParmaRenderable {
                     view
                         .padding(.top, 4)
                     Rectangle()
-                        .foregroundColor(.pink)
+                        .foregroundColor(.broskiBlue)
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 1, alignment: .center)
                         .padding(.bottom, 8)
                 }

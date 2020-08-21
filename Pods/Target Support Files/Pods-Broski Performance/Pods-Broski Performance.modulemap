@@ -1,0 +1,6 @@
+framework module Pods_Broski_Performance {
+  umbrella header "Pods-Broski Performance-umbrella.h"
+
+  export *
+  module * { export * }
+}
