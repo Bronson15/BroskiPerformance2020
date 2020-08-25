@@ -14,7 +14,12 @@ struct ExerciseDetailView: View {
     var body: some View {
         VStack {
             HeroView(imagePath: exercise.imagePath, blur: 0)
-                .frame(height: 400)
+                .frame(width: UIScreen.main.bounds.width)
+                .frame(minHeight: 400)
+                .colorMultiply(.broskiBlue)
+                .offset(y: -50)
+                .padding(.bottom, -150)
+                .edgesIgnoringSafeArea(.top)
             VStack(alignment: .leading) {
                 HStack {
                     Text(exercise.muscleGroup)
@@ -25,8 +30,10 @@ struct ExerciseDetailView: View {
                         .font(.subheadline)
                         .bold()
                 }
-                ScrollView {
-                    Text(exercise.howTo)
+                List {
+                    ForEach(exercise.howTo.indices) { i in
+                        Text(String(i + 1) + ". " + exercise.howTo[i])
+                    }
                 }
             }
             .padding()

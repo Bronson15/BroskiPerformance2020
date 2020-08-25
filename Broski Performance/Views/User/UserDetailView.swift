@@ -21,7 +21,7 @@ struct UserDetailView: View {
                     .frame(width: UIScreen.main.bounds.width)
                     .ignoresSafeArea()
                 HStack {
-                    CircleImageView(image: user.profilePicture)
+                    CircleImageView(imagePath: user.profilePicturePath)
                         .frame(width: 125)
                         .offset(x: 15)
                     VStack(alignment: .leading) {

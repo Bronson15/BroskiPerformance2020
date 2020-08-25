@@ -14,6 +14,7 @@ struct Exercise: Identifiable, Codable {
     var name: String
     var imagePath: String
     var muscleGroup: String
-    var howTo: String
+    var howTo: [String]
     var equipmentNeeded: [String]
+    var exerciseNumber: Int?
 }

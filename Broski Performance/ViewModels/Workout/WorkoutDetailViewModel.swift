@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 class WorkoutDetailViewModel : ObservableObject {
@@ -16,7 +16,7 @@ class WorkoutDetailViewModel : ObservableObject {
     private let db = Firestore.firestore()
     
     func fetchData(workoutPlanID: String, workoutID: String) {
-        db.collection("workoutPlans").document(workoutPlanID).collection("workouts").document(workoutID).collection("exercises").addSnapshotListener { (querySnapshot, error) in
+        db.collection("workoutPlans").document(workoutPlanID).collection("workouts").document(workoutID).collection("exercises").order(by: "exerciseNumber").addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 print("No documents")
                 return

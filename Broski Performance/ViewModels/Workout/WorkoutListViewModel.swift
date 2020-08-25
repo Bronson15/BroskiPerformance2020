@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseFirestore
 
 class WorkoutListViewModel : ObservableObject {
     @Published var workouts = [Workout]()
