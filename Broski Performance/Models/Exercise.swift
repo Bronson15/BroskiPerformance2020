@@ -13,6 +13,7 @@ struct Exercise: Identifiable, Codable {
     @DocumentID var id: String? = UUID().uuidString
     var name: String
     var imagePath: String
+    var videoPath: String
     var muscleGroup: String
     var howTo: [String]
     var equipmentNeeded: [String]

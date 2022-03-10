@@ -15,7 +15,7 @@ struct WorkoutPlanListView: View {
         NavigationView {
             List(viewModel.workoutPlans) { workoutPlan in
                 NavigationLink(destination: WorkoutPlanDetailView(workoutPlan: workoutPlan)) {
-                    WorkoutPlanRowView(workoutPlan: workoutPlan)
+//                    WorkoutPlanRowView(workoutPlan: workoutPlan)
                 }
             }
             .onAppear() {

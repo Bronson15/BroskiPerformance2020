@@ -6,4 +6,9 @@
 //  Copyright © 2020 iOSLife. All rights reserved.
 //
 
+import SwiftUI
 import Foundation
+import FirebaseFirestore
+
+class UserProfileViewModel : ObservableObject {
+}

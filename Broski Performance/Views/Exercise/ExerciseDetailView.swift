@@ -12,14 +12,9 @@ struct ExerciseDetailView: View {
     var exercise: Exercise
     
     var body: some View {
-        VStack {
-            HeroView(imagePath: exercise.imagePath, blur: 0)
-                .frame(width: UIScreen.main.bounds.width)
-                .frame(minHeight: 400)
-                .colorMultiply(.broskiBlue)
-                .offset(y: -50)
-                .padding(.bottom, -150)
-                .edgesIgnoringSafeArea(.top)
+        VStack {            
+            ExerciseVideoView(videoPath: exercise.videoPath)
+            
             VStack(alignment: .leading) {
                 HStack {
                     Text(exercise.muscleGroup)
@@ -32,7 +27,10 @@ struct ExerciseDetailView: View {
                 }
                 List {
                     ForEach(exercise.howTo.indices) { i in
-                        Text(String(i + 1) + ". " + exercise.howTo[i])
+                        HStack{
+                            Image(systemName: symbol[i])
+                            Text(exercise.howTo[i])
+                        }
                     }
                 }
             }
@@ -43,6 +41,35 @@ struct ExerciseDetailView: View {
         .navigationBarTitle(Text(exercise.name), displayMode: .inline)
     }
 }
+
+var symbol: [String] = [
+    "1.circle",
+    "2.circle",
+    "3.circle",
+    "4.circle",
+    "5.circle",
+    "6.circle",
+    "7.circle",
+    "8.circle",
+    "9.circle",
+    "10.circle",
+    "11.circle",
+    "12.circle",
+    "13.circle",
+    "14.circle",
+    "15.circle",
+    "16.circle",
+    "17.circle",
+    "18.circle",
+    "19.circle",
+    "20.circle",
+    "21.circle",
+    "22.circle",
+    "23.circle",
+    "24.circle",
+    "25.circle"
+    
+]
 
 //struct ExerciseDetailView_Previews: PreviewProvider {
 //    static var previews: some View {

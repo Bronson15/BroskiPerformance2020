@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseFirestore
 
 class FeaturedTabViewModel : ObservableObject {
     @Published var workoutPlans = [WorkoutPlan]()

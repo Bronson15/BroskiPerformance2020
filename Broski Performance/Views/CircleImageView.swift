@@ -10,12 +10,10 @@ import SwiftUI
 import struct Kingfisher.KFImage
 
 struct CircleImageView: View {
-    @State private var imageURL = URL(string: "")
     var imagePath: String
     
     var body: some View {
-        KFImage(imageURL)
-            .resizable()
+        FirebaseImage(imagePath: imagePath)
             .aspectRatio(contentMode: .fit)
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.broskiBlue, lineWidth: 4))

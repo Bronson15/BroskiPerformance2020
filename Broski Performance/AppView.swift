@@ -16,12 +16,12 @@ struct AppView: View {
                     Image(systemName: "star")
                     Text("Broski Featured")
                 }
-//            WorkoutPlanDetailView(workoutPlan: workoutPlanData[0])
-//                .tabItem {
-//                    Image(systemName: "play.circle.fill")
-//                    Text("Current Plan")
-//                }
-            UserDetailView(user: userData)
+            ExerciseLibraryListView()
+                .tabItem {
+                    Image(systemName: "list.dash")
+                    Text("Exercise Library")
+                }
+            MyProfileTabView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("My Profile")

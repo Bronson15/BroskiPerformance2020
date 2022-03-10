@@ -13,8 +13,9 @@ import CoreLocation
 //let exerciseData: [Exercise] = load("exerciseData.json")
 //let workoutData: [Workout] = load("workoutData.json")
 //let workoutPlanData: [WorkoutPlan] = load("workoutPlanData.json")
-let userData: User = load("userData.json")
+//let userData: User = load("userData.json")
 let articleData: [Article] = load("articleData.json")
+let onboardingData: [OnboardingPage] = load("onboardingPages.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

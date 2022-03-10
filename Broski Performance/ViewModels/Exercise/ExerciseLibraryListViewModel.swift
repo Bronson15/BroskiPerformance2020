@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class ExerciseListViewModel : ObservableObject {
+class ExerciseLibraryListViewModel : ObservableObject {
     @Published var exercises = [Exercise]()
     
     private let db = Firestore.firestore()

@@ -9,7 +9,7 @@
 import HealthKit
 
 func FetchHealthKitData() -> Void {
-    var user: User = userData
+//    var user: User = userData
     let healthStore = HKHealthStore()
     
     if HKHealthStore.isHealthDataAvailable() {
@@ -61,7 +61,7 @@ func FetchHealthKitData() -> Void {
                         if let quantity = statistics.averageQuantity() {
                             let value = quantity.doubleValue(for: HKUnit.percent())
                             print("Body Fat Percentage: " + String(value))
-                            user.bodyFatPercent = value
+//                            user.bodyFatPercent = value
                                                         
                         }
                     }
@@ -90,7 +90,7 @@ func FetchHealthKitData() -> Void {
                         if let quantity = statistics.averageQuantity() {
                             let value = quantity.doubleValue(for: HKUnit.count())
                             print("Body Mass Index: " + String(value))
-                            user.bodyMassIndex = value
+//                            user.bodyMassIndex = value
                         }
                     }
                     
@@ -118,7 +118,7 @@ func FetchHealthKitData() -> Void {
                         if let quantity = statistics.averageQuantity() {
                             let value = quantity.doubleValue(for: HKUnit.pound())
                             print("Body Mass: " + String(value))
-                            user.userWeight = value
+//                            user.userWeight = value
                         }
                     }
                     
@@ -130,7 +130,7 @@ func FetchHealthKitData() -> Void {
                 
                 
                 let file = Bundle.main.url(forResource: "userData.json", withExtension: nil)
-                writeToFile(location: file!, user: user)
+//                writeToFile(location: file!, user: user)
             } else {
                     print("Authorization failed")
             }
@@ -145,7 +145,7 @@ func writeToFile(location: URL, user: User) {
         do{
             let encoder = JSONEncoder()
             encoder.outputFormatting = .prettyPrinted
-            let JsonData = try encoder.encode(user)
-            try JsonData.write(to: location)
+//            let JsonData = try encoder.encode(user)
+//            try JsonData.write(to: location)
         }catch{}
     }

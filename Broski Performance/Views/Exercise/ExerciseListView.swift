@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ExerciseListView: View {
     var exercises: [Exercise]
-//    @ObservedObject var viewModel = ExerciseListViewModel()
     
     var body: some View {
         List(exercises) { exercise in
@@ -18,9 +17,6 @@ struct ExerciseListView: View {
                 ExerciseRowView(exercise: exercise)
             }
         }
-//        .onAppear() {
-//            self.viewModel.fetchData()
-//        }
     }
 }
 
